@@ -1,0 +1,11 @@
+# Xcode
+#
+helloVIP.xcodeproj/xcuserdata/*
+#helloVIP.xcodeproj/xcshareddata/
+*.xccheckout
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+.DS_Store
+*.dSYM.zip

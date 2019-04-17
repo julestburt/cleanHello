@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		86FDE79F223B100700EB0882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE79E223B100700EB0882 /* AppDelegate.swift */; };
-		86FDE7A1223B100700EB0882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7A0223B100700EB0882 /* ViewController.swift */; };
+		86FDE7A1223B100700EB0882 /* helloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7A0223B100700EB0882 /* helloViewController.swift */; };
 		86FDE7A4223B100700EB0882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FDE7A2223B100700EB0882 /* Main.storyboard */; };
 		86FDE7A6223B100A00EB0882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FDE7A5223B100A00EB0882 /* Assets.xcassets */; };
 		86FDE7A9223B100A00EB0882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FDE7A7223B100A00EB0882 /* LaunchScreen.storyboard */; };
-		86FDE7B4223B100A00EB0882 /* helloVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7B3223B100A00EB0882 /* helloVIPTests.swift */; };
+		86FDE7C2223B1B6100EB0882 /* helloInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7C1223B1B6100EB0882 /* helloInteractor.swift */; };
+		86FDE7C4223B1B7000EB0882 /* helloPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7C3223B1B7000EB0882 /* helloPresenter.swift */; };
+		86FDE7D7223C4CC400EB0882 /* helloVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDE7D6223C4CC400EB0882 /* helloVIPTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		86FDE79B223B100700EB0882 /* helloVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FDE79E223B100700EB0882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86FDE7A0223B100700EB0882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86FDE7A0223B100700EB0882 /* helloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloViewController.swift; sourceTree = "<group>"; };
 		86FDE7A3223B100700EB0882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86FDE7A5223B100A00EB0882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FDE7A8223B100A00EB0882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FDE7AA223B100A00EB0882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86FDE7AF223B100A00EB0882 /* helloVIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloVIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FDE7B3223B100A00EB0882 /* helloVIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloVIPTests.swift; sourceTree = "<group>"; };
 		86FDE7B5223B100A00EB0882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FDE7C1223B1B6100EB0882 /* helloInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloInteractor.swift; sourceTree = "<group>"; };
+		86FDE7C3223B1B7000EB0882 /* helloPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloPresenter.swift; sourceTree = "<group>"; };
+		86FDE7D6223C4CC400EB0882 /* helloVIPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helloVIPTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,10 @@
 		86FDE79D223B100700EB0882 /* helloVIP */ = {
 			isa = PBXGroup;
 			children = (
-				86FDE79E223B100700EB0882 /* AppDelegate.swift */,
-				86FDE7A0223B100700EB0882 /* ViewController.swift */,
-				86FDE7A2223B100700EB0882 /* Main.storyboard */,
+				86FDE7C0223B1B3400EB0882 /* Views */,
+				86FDE7D4223C4B3200EB0882 /* Storyboards */,
 				86FDE7A5223B100A00EB0882 /* Assets.xcassets */,
-				86FDE7A7223B100A00EB0882 /* LaunchScreen.storyboard */,
-				86FDE7AA223B100A00EB0882 /* Info.plist */,
+				86FDE7D5223C4B4600EB0882 /* App */,
 			);
 			path = helloVIP;
 			sourceTree = "<group>";
@@ -90,10 +92,38 @@
 		86FDE7B2223B100A00EB0882 /* helloVIPTests */ = {
 			isa = PBXGroup;
 			children = (
-				86FDE7B3223B100A00EB0882 /* helloVIPTests.swift */,
+				86FDE7D6223C4CC400EB0882 /* helloVIPTests.swift */,
 				86FDE7B5223B100A00EB0882 /* Info.plist */,
 			);
 			path = helloVIPTests;
+			sourceTree = "<group>";
+		};
+		86FDE7C0223B1B3400EB0882 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86FDE7A0223B100700EB0882 /* helloViewController.swift */,
+				86FDE7C1223B1B6100EB0882 /* helloInteractor.swift */,
+				86FDE7C3223B1B7000EB0882 /* helloPresenter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86FDE7D4223C4B3200EB0882 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86FDE7A2223B100700EB0882 /* Main.storyboard */,
+				86FDE7A7223B100A00EB0882 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		86FDE7D5223C4B4600EB0882 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86FDE79E223B100700EB0882 /* AppDelegate.swift */,
+				86FDE7AA223B100A00EB0882 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +179,7 @@
 					};
 					86FDE7AE223B100A00EB0882 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 						TestTargetID = 86FDE79A223B100700EB0882;
 					};
 				};
@@ -197,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FDE7A1223B100700EB0882 /* ViewController.swift in Sources */,
+				86FDE7A1223B100700EB0882 /* helloViewController.swift in Sources */,
 				86FDE79F223B100700EB0882 /* AppDelegate.swift in Sources */,
+				86FDE7C2223B1B6100EB0882 /* helloInteractor.swift in Sources */,
+				86FDE7C4223B1B7000EB0882 /* helloPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FDE7B4223B100A00EB0882 /* helloVIPTests.swift in Sources */,
+				86FDE7D7223C4CC400EB0882 /* helloVIPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,13 +394,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P47K9N654T;
-				INFOPLIST_FILE = helloVIP/Info.plist;
+				DEVELOPMENT_TEAM = ZU9YSQ22FQ;
+				INFOPLIST_FILE = "$(SRCROOT)/helloVIP/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.braintest.helloVIP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bethegame.helloVIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,13 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P47K9N654T;
-				INFOPLIST_FILE = helloVIP/Info.plist;
+				DEVELOPMENT_TEAM = ZU9YSQ22FQ;
+				INFOPLIST_FILE = "$(SRCROOT)/helloVIP/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.braintest.helloVIP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bethegame.helloVIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,6 +430,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P47K9N654T;
 				INFOPLIST_FILE = helloVIPTests/Info.plist;
@@ -407,6 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.braintest.helloVIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/helloVIP.app/helloVIP";
@@ -418,6 +453,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P47K9N654T;
 				INFOPLIST_FILE = helloVIPTests/Info.plist;
